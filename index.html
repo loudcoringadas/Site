@@ -3,48 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meu Link Premium</title>
+  <title>Acesso Premium</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: white;
       font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      margin: 0;
+      color: #fff;
       text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 20px;
     }
 
     h1 {
       font-size: 3em;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
       margin-bottom: 10px;
     }
 
     p {
       font-size: 1.2em;
       margin-bottom: 30px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
     }
 
     .btn {
-      background-color: #00c6ff;
-      background-image: linear-gradient(to right, #0072ff, #00c6ff);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
       border: none;
       color: white;
       padding: 15px 30px;
       font-size: 1.2em;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, box-shadow 0.3s;
       text-decoration: none;
     }
 
     .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0, 198, 255, 0.5);
+      box-shadow: 0 8px 20px rgba(0, 198, 255, 0.4);
     }
 
     footer {
@@ -53,12 +69,25 @@
       font-size: 0.9em;
       opacity: 0.8;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .btn {
+        font-size: 1em;
+        padding: 12px 25px;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>🔗 Get key here</h1>
-  <p>Clique no botão abaixo para continuar:</p>
-  <a href="https://link-center.net/1338065/s333-macro-for-asura">Acessar Agora</a>
-  <footer>© 2025 - Todos os direitos reservados por akkj</footer>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2021.png" alt="Logo" class="logo" />
+  <h1>🎁 Acesso Exclusivo Liberado</h1>
+  <p>Você está prestes a acessar conteúdo exclusivo. Clique no botão abaixo!</p>
+  <a href="https://loot-link.com/s?Q3jfSL96" class="btn">
+    <span>Ir para o Link</span> 🔗
+  </a>
+  <footer>© 2025 - Site Personalizado por Você</footer>
 </body>
 </html>
